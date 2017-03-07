@@ -4,8 +4,6 @@ import friends from './friends';
 
 import './App.css';
 
-
-
 class FriendsList extends Component {
 
   constructor(props) {
