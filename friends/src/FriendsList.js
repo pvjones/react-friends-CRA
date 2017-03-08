@@ -25,8 +25,8 @@ class FriendsList extends Component {
       .filter( elem => {
         return elem.name.toLowerCase().indexOf(this.state.searchText.toLowerCase()) !== -1;
       })
-      .sort( (elem1, elem2) => {
-        return elem1[this.state.orderBy] > elem2[this.state.orderBy]
+      .sort( (a, b) => {
+        return a[this.state.orderBy] < b[this.state.orderBy]
       })
       .map( elem => {
         return <Friend 
